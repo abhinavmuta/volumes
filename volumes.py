@@ -1,5 +1,7 @@
 '''Phil Hopkins thought experiment which shows the volume approximation
 property of SPH Kernel vs Sheperd filtered Kernel.
+
+    > python volumes.py --openmp --plot --pixels 500 --hdx 100 --shep -n 3
 '''
 import numpy as np
 from compyle.api import declare
