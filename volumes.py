@@ -101,7 +101,7 @@ def compute_factors(length=1.0, pixels=100, hdx=30, dim=2, no_of_daughters=3,
     dx = 1.0/pixels
     h = hdx * dx
 
-    msg = "Please use no. of SPH points is a multiple of 3."
+    msg = "Please make sure no. of SPH points is a multiple of 3."
     assert no_of_daughters%3 == 0, msg
 
     dummy, sources = create_particles(length, dx, h, dim, no_of_daughters,
